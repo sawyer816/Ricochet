@@ -19,7 +19,6 @@ public class LoadLevel : MonoBehaviour
         
         // player settings
         playerOne.AddComponent<Player>();
-        playerOne.GetComponent<Player>().Velocity = 10f;
     }
 
     // Update is called once per frame
