@@ -12,7 +12,7 @@ public class LoadLevel : MonoBehaviour
     void Start()
     {
         // create player 1 with keyboard input
-        p1 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        Instantiate(p1, new Vector3(0, 0, 0), Quaternion.identity);
         p1.AddComponent<Player>();
         p1.GetComponent<Player>().KeyboardInput = true;
         p1.GetComponent<Player>().Velocity = 5f;

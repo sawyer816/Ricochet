@@ -10352,6 +10352,8 @@ GameObject:
   - component: {fileID: 11443146}
   - component: {fileID: 11409376}
   - component: {fileID: 11488788}
+  - component: {fileID: -8093157734788613824}
+  - component: {fileID: -4035705153711628780}
   m_Layer: 9
   m_Name: CompleteTank
   m_TagString: Untagged
@@ -10659,6 +10661,34 @@ MonoBehaviour:
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   m_ExplosionPrefab: {fileID: 0}
+--- !u!114 &-8093157734788613824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa2cefb51c60be40a424562f988ab5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardInput: 1
+  Velocity: 5
+--- !u!114 &-4035705153711628780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa2cefb51c60be40a424562f988ab5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardInput: 0
+  Velocity: 3
 --- !u!1 &173936
 GameObject:
   m_ObjectHideFlags: 0
