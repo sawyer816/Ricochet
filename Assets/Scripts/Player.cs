@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     // called once per frame
     void Update()
     {
-
+    
         // player one input handling
         if (playerOne) {
             if (Input.GetKey(KeyCode.W)) {
@@ -26,10 +26,10 @@ public class Player : MonoBehaviour
                 transform.Translate(-1 * Vector3.forward * Time.deltaTime * Velocity);
             }
             if (Input.GetKey(KeyCode.A)) {
-                transform.Rotate(0, -0.5f, 0);
+                transform.Rotate(0, -500f * Time.deltaTime, 0);
             }
             if (Input.GetKey(KeyCode.D)) {
-                transform.Rotate(0, 0.5f, 0);
+                transform.Rotate(0, 500f *Time.deltaTime, 0);
             }
         }
 
