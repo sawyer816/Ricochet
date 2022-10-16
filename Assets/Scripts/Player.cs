@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public bool KeyboardInput;
-    public float Velocity = 3f;
+    public bool primary = true; // player 1 or 2
+    public bool KeyboardInput = true; // keyboard input
+    public float Velocity = 3f; // default movement speed
 
     // called before first frame
     void Start()
