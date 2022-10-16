@@ -17,6 +17,7 @@ public class LoadLevel : MonoBehaviour
         playerOne = Instantiate(TankPrefab, new Vector3(0, 0, 0), Quaternion.identity);
         playerOne.AddComponent<Player>();
         playerOne.GetComponent<Player>().playerOne = true;
+        playerOne.GetComponent<Player>().color = Color.blue;
 
         // create player 2 with keyboard input
         playerTwo = Instantiate(TankPrefab, new Vector3(5, 0, 0), Quaternion.identity);
