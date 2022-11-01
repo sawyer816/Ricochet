@@ -5,8 +5,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public bool playerOne;
-    public float Velocity = 15f;
+    public float Velocity = 500f;
     public Color color;
+    Rigidbody rb;
 
     // called before first frame
     void Start()
@@ -24,45 +25,52 @@ public class Player : MonoBehaviour
         {
             // gameObject.GetComponent<Renderer>().material.color = color;
         }
+        rb = this.GetComponent<Rigidbody>();
     }
 
     // called once per frame
-    void Update()
+    void FixedUpdate()
     {
-    
+
         // player one input handling
-        if (playerOne) {
-            if (Input.GetKey(KeyCode.W)) {
-                transform.Translate(Vector3.forward * Time.deltaTime * Velocity);
+        if (playerOne)
+        {
+            if (Input.GetKey(KeyCode.W))
+            {
+                rb.velocity = transform.forward * Time.deltaTime * Velocity;
             }
-            if (Input.GetKey(KeyCode.S)) { 
-                transform.Translate(-1 * Vector3.forward * Time.deltaTime * Velocity);
+            if (Input.GetKey(KeyCode.S))
+            {
+                rb.velocity = transform.forward * -1 * Time.deltaTime * Velocity;
             }
-            if (Input.GetKey(KeyCode.A)) {
-                transform.Rotate(0, -500f * Time.deltaTime, 0);
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(0, -150f * Time.deltaTime, 0);
             }
-            if (Input.GetKey(KeyCode.D)) {
-                transform.Rotate(0, 500f *Time.deltaTime, 0);
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.Rotate(0, 150f * Time.deltaTime, 0);
             }
         }
 
         // player two input handling
-        else {
+        else
+        {
             if (Input.GetKey(KeyCode.I))
             {
-                transform.Translate(Vector3.forward * Time.deltaTime * Velocity);
+                rb.velocity = transform.forward * Time.deltaTime * Velocity;
             }
             if (Input.GetKey(KeyCode.K))
             {
-                transform.Translate(-1 * Vector3.forward * Time.deltaTime * Velocity);
+                rb.velocity = transform.forward * -1 * Time.deltaTime * Velocity;
             }
             if (Input.GetKey(KeyCode.J))
             {
-                transform.Rotate(0, -0.5f, 0);
+                transform.Rotate(0, -200f * Time.deltaTime, 0);
             }
             if (Input.GetKey(KeyCode.L))
             {
-                transform.Rotate(0, 0.5f, 0);
+                transform.Rotate(0, 200f * Time.deltaTime, 0);
             }
         }
     }
