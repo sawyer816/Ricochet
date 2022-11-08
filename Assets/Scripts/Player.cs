@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     // called before first frame
     void Start()
     {
-
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     // called once per frame
