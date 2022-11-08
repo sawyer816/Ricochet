@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     // called before first frame
     void Start()
     {
-
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     // called once per frame
@@ -32,11 +32,11 @@ public class Player : MonoBehaviour
             }
             if (Input.GetKey(KeyCode.A))
             {
-                transform.Rotate(0, -150f * Time.deltaTime, 0);
+                transform.Rotate(0, -500f * Time.deltaTime, 0);
             }
             if (Input.GetKey(KeyCode.D))
             {
-                transform.Rotate(0, 150f * Time.deltaTime, 0);
+                transform.Rotate(0, 500f * Time.deltaTime, 0);
             }
         }
 
