@@ -11,17 +11,19 @@ public class LoadLevel : MonoBehaviour
     public GameObject playerTwo;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         // create player 1 with keyboard input
         playerOne = Instantiate(TankPrefab, new Vector3(0, 0, 0), Quaternion.identity);
         playerOne.AddComponent<Player>();
         playerOne.GetComponent<Player>().playerOne = true;
         playerOne.GetComponent<Player>().color = Color.blue;
+        playerOne.name = "Player1";
 
         // create player 2 with keyboard input
         playerTwo = Instantiate(TankPrefab, new Vector3(5, 0, 0), Quaternion.identity);
         playerTwo.AddComponent<Player>();
+        playerTwo.name = "Player2";
     }
 
     // Update is called once per frame
