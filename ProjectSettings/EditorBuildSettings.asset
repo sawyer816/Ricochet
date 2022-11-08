@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 5a9dcf3e874775a46ae357858c9c94dd
+  - enabled: 1
+    path: Assets/Scenes/Map1.unity
+    guid: 48b29e5d369278c499be5324e531b8f6
+  - enabled: 1
+    path: Assets/Scenes/Gameplay.unity
+    guid: a20b4fc38eb968e4eaa778f315705aa8
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9592f1aa1c1fd3a48905e61d02c543f7, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 718e417e728341a4db92dacdb449b839, type: 2}
