@@ -12,20 +12,7 @@ public class Player : MonoBehaviour
     // called before first frame
     void Start()
     {
-        if (playerOne)
-        {
-            gameObject.name = "Player 1";
-        }
 
-        else {
-            gameObject.name = "Player 2";
-        }
-
-        if (color != null)
-        {
-            // gameObject.GetComponent<Renderer>().material.color = color;
-        }
-        rb = this.GetComponent<Rigidbody>();
     }
 
     // called once per frame
@@ -66,11 +53,12 @@ public class Player : MonoBehaviour
             }
             if (Input.GetKey(KeyCode.J))
             {
-                transform.Rotate(0, -200f * Time.deltaTime, 0);
+                transform.Rotate(0, -500f * Time.deltaTime, 0);
             }
             if (Input.GetKey(KeyCode.L))
             {
-                transform.Rotate(0, 200f * Time.deltaTime, 0);
+                transform.Rotate(0, 500f * Time.deltaTime, 0);
+
             }
         }
     }
