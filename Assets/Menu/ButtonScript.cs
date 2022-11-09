@@ -22,7 +22,7 @@ public class ButtonScript : MonoBehaviour
         }
         else if(text.text == "Map 2")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(3);
         }
         else if(text.text == "Map 3")
         {
