@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 101
+  controlID: 95
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 102
+  controlID: 96
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 103
+  controlID: 97
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,8 +327,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 690
-    y: 118
+    x: 839
+    y: 120
     width: 1200
     height: 681
   m_ViewDataDictionary: {fileID: 0}
@@ -436,9 +436,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0a500000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9c11ffff421fffffa023ffff2e27ffffc62affff9058ffff205affff68a6ffff28a7ffff28a8ffff24a9ffff40aaffffd0aaffffb0afffff1cc4ffff20edffffc2edffffaeeefffffaeeffffbaf1ffff46f4ffff68f9ffff34fbffffe06c0000bc7000005872000054770000e07700000e780000aa80000094810000
+      m_ExpandedIDs: 54cbffffd8e6ffff24fbffff644e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -687,9 +687,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.3614722, y: 3.7326205, z: -20.414488}
+    m_Target: {x: 10.94721, y: -39.512737, z: 82.92351}
     speed: 2
-    m_Value: {x: -0.3614722, y: 3.7326205, z: -20.414488}
+    m_Value: {x: 10.94721, y: -39.512737, z: 82.92351}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -736,13 +736,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.2052196, y: -0.10401922, z: 0.021846911, w: 0.9728174}
+    m_Target: {x: 0.20814347, y: 0.053664893, z: -0.01142985, w: 0.97654516}
     speed: 2
-    m_Value: {x: 0.20524155, y: -0.10403034, z: 0.021849247, w: 0.97292143}
+    m_Value: {x: 0.20814611, y: 0.05366557, z: -0.011429994, w: 0.9765575}
   m_Size:
-    m_Target: 0.5560874
+    m_Target: 61.975487
     speed: 2
-    m_Value: 0.5560874
+    m_Value: 61.975487
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -900,22 +900,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\hudso\Desktop\School\3D Game Programming CS583\Ricochet
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: da4f0000
-    m_LastClickedID: 20442
-    m_ExpandedIDs: 00000000c44f0000ca4f0000685f00006c5f0000f265000000ca9a3bffffff7f
+    m_SelectedIDs: ee4f0000
+    m_LastClickedID: 20462
+    m_ExpandedIDs: 00000000e64f0000e84f0000ea4f0000ec4f0000ee4f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -943,7 +943,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c44f0000
+    m_ExpandedIDs: 00000000e64f0000e84f0000ea4f0000ec4f0000ee4f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1047,8 +1047,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 302
-    y: 820
+    x: 451
+    y: 822
     width: 1589
     height: 459
   m_ViewDataDictionary: {fileID: 0}
@@ -1057,7 +1057,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 31322
+  m_LastSelectedObjectID: 21296
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
