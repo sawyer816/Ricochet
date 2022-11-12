@@ -386,6 +386,10 @@ MonoBehaviour:
   TankPrefab: {fileID: 173472, guid: 756d3a6506f2f8241b4e8badde68567a, type: 3}
   playerOne: {fileID: 0}
   playerTwo: {fileID: 0}
+  player1X: 44
+  player1Z: 5
+  player2X: -43
+  player2Z: -34
 --- !u!1 &171920301
 GameObject:
   m_ObjectHideFlags: 0
