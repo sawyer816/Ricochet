@@ -24,6 +24,9 @@ public class LoadLevel : MonoBehaviour
         playerTwo = Instantiate(TankPrefab, new Vector3(5, 0, 0), Quaternion.identity);
         playerTwo.AddComponent<Player>();
         playerTwo.name = "Player2";
+
+        gameObject.GetComponent<CameraControl>().m_Targets[0] = playerOne.transform;
+        gameObject.GetComponent<CameraControl>().m_Targets[1] = playerTwo.transform;
     }
 
     // Update is called once per frame
