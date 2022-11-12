@@ -23,6 +23,7 @@ public class LoadLevel : MonoBehaviour
         // create player 2 with keyboard input
         playerTwo = Instantiate(TankPrefab, new Vector3(5, 0, 0), Quaternion.identity);
         playerTwo.AddComponent<Player>();
+        playerTwo.GetComponent<Player>().playerOne = false;
         playerTwo.name = "Player2";
     }
 
