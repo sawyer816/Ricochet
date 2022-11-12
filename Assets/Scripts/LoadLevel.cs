@@ -35,6 +35,9 @@ public class LoadLevel : MonoBehaviour
             render2[i].material.color = Color.blue;
         }
         playerTwo.name = "Player2";
+
+        gameObject.GetComponent<CameraControl>().m_Targets[0] = playerOne.transform;
+        gameObject.GetComponent<CameraControl>().m_Targets[1] = playerTwo.transform;
     }
 
     // Update is called once per frame
