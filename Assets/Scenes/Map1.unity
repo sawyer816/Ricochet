@@ -353,6 +353,10 @@ MonoBehaviour:
   TankPrefab: {fileID: 173472, guid: 756d3a6506f2f8241b4e8badde68567a, type: 3}
   playerOne: {fileID: 0}
   playerTwo: {fileID: 0}
+  player1X: 44
+  player1Z: 5
+  player2X: -43
+  player2Z: -34
 --- !u!1 &163361960
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,25 +441,6 @@ Transform:
   m_Father: {fileID: 110887969}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &163361964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163361960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8e50526eb02c234bab49d2c0b200a66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TankPrefab: {fileID: 173472, guid: 756d3a6506f2f8241b4e8badde68567a, type: 3}
-  playerOne: {fileID: 0}
-  playerTwo: {fileID: 0}
-  player1X: 44
-  player1Z: 5
-  player2X: -43
-  player2Z: -34
 --- !u!1 &171920301
 GameObject:
   m_ObjectHideFlags: 0
