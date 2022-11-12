@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     public bool playerOne;
     public float Velocity = 500f;
     public Color color;
-    Rigidbody rb;
+    public Rigidbody rb;
 
     // called before first frame
     void Start()
