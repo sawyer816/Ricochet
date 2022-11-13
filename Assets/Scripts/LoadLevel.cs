@@ -9,6 +9,7 @@ public class LoadLevel : MonoBehaviour
     public GameObject TankPrefab;
     public GameObject playerOne;
     public GameObject playerTwo;
+    public GameObject Score1;
     public int player1X, player1Z, player2X, player2Z;
 
     // Start is called before the first frame update
@@ -18,6 +19,8 @@ public class LoadLevel : MonoBehaviour
         playerOne = Instantiate(TankPrefab, new Vector3(player1X, 0, player1Z), Quaternion.identity);
         playerOne.AddComponent<Player>();
         playerOne.GetComponent<Player>().playerOne = true;
+        Score1 = GameObject.Find("Score");
+        Score1.name = "Score1";
        MeshRenderer[] render1 =  playerOne.GetComponentsInChildren<MeshRenderer>();
         for(int i = 0; i < render1.Length; i++)
         {

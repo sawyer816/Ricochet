@@ -8,10 +8,13 @@ public class Player : MonoBehaviour
     public float Velocity = 500f;
     public Color color;
     public Rigidbody rb;
-
+    public int PlayerOneScore;
+    public int PlayerTwoScore;
     // called before first frame
     void Start()
     {
+        PlayerOneScore = 0;
+        PlayerTwoScore = 0;
         rb = gameObject.GetComponent<Rigidbody>();
     }
 

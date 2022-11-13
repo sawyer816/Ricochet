@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class bounce : MonoBehaviour
@@ -24,12 +25,23 @@ public class bounce : MonoBehaviour
     //collision enter for ricochet
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.name == "Player1" || collision.gameObject.name == "Player2")
+        if (collision.gameObject.name == "Player1")
         {
-            Debug.Log("DEAD");
+            GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore++;
+
+            GameObject.Find("Score1").GetComponent<TextMeshPro>().text = GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore.ToString();
+       
         }
-        Console.WriteLine("reached");
+        if (collision.gameObject.name == "Player2")
+        {
+            GameObject.Find("Player2").GetComponent<Player>().PlayerTwoScore++;
+
+            GameObject.Find("Score").GetComponent<TextMeshPro>().text = GameObject.Find("Player2").GetComponent<Player>().PlayerTwoScore.ToString();
+
+        }
+       
+
+
         Ricochet(collision.contacts[0].normal);
         
     }
