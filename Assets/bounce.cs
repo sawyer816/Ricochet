@@ -27,17 +27,15 @@ public class bounce : MonoBehaviour
     {
         if (collision.gameObject.name == "Player1")
         {
-            GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore++;
-
-            GameObject.Find("Score1").GetComponent<TextMeshPro>().text = GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore.ToString();
-       
-        }
-        if (collision.gameObject.name == "Player2")
-        {
             GameObject.Find("Player2").GetComponent<Player>().PlayerTwoScore++;
 
             GameObject.Find("Score").GetComponent<TextMeshPro>().text = GameObject.Find("Player2").GetComponent<Player>().PlayerTwoScore.ToString();
+        }
+        if (collision.gameObject.name == "Player2")
+        {
+            GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore++;
 
+            GameObject.Find("Score1").GetComponent<TextMeshPro>().text = GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore.ToString();
         }
        
 
