@@ -13,8 +13,6 @@ public class Player : MonoBehaviour
     // called before first frame
     void Start()
     {
-        PlayerOneScore = 0;
-        PlayerTwoScore = 0;
         rb = gameObject.GetComponent<Rigidbody>();
     }
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LoadLevel : MonoBehaviour
@@ -9,7 +10,6 @@ public class LoadLevel : MonoBehaviour
     public GameObject TankPrefab;
     public GameObject playerOne;
     public GameObject playerTwo;
-    public GameObject Score1;
     public int player1X, player1Z, player2X, player2Z;
 
     // Start is called before the first frame update
@@ -19,8 +19,6 @@ public class LoadLevel : MonoBehaviour
         playerOne = Instantiate(TankPrefab, new Vector3(player1X, 0, player1Z), Quaternion.identity);
         playerOne.AddComponent<Player>();
         playerOne.GetComponent<Player>().playerOne = true;
-        Score1 = GameObject.Find("Score");
-        Score1.name = "Score1";
        MeshRenderer[] render1 =  playerOne.GetComponentsInChildren<MeshRenderer>();
         for(int i = 0; i < render1.Length; i++)
         {
@@ -41,6 +39,13 @@ public class LoadLevel : MonoBehaviour
 
         gameObject.GetComponent<CameraControl>().m_Targets[0] = playerOne.transform;
         gameObject.GetComponent<CameraControl>().m_Targets[1] = playerTwo.transform;
+    }
+    private void Start()
+    {
+        GameObject.Find("Player2").GetComponent<Player>().PlayerTwoScore = PlayerPrefs.GetInt("Score2");
+        playerTwo.GetComponentInChildren<TextMeshPro>().text = GameObject.Find("Player2").GetComponent<Player>().PlayerTwoScore.ToString();
+        GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore = PlayerPrefs.GetInt("Score1");
+        playerOne.GetComponentInChildren<TextMeshPro>().text = GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore.ToString();
     }
 
     // Update is called once per frame
