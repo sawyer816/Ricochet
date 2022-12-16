@@ -15,6 +15,8 @@ public class LoadLevel : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        PlayerPrefs.SetString("Winner", "Player 1 ");
+        PlayerPrefs.SetString("Color", "red");
         // create player 1 with keyboard input
         playerOne = Instantiate(TankPrefab, new Vector3(player1X, 0, player1Z), Quaternion.identity);
         playerOne.AddComponent<Player>();
@@ -42,6 +44,7 @@ public class LoadLevel : MonoBehaviour
     }
     private void Start()
     {
+
         GameObject.Find("Player2").GetComponent<Player>().PlayerTwoScore = PlayerPrefs.GetInt("Score2");
         playerTwo.GetComponentInChildren<TextMeshPro>().text = GameObject.Find("Player2").GetComponent<Player>().PlayerTwoScore.ToString();
         GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore = PlayerPrefs.GetInt("Score1");

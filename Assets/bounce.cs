@@ -39,18 +39,34 @@ public class bounce : MonoBehaviour
             if (GameObject.Find("Player2").GetComponent<Player>().PlayerTwoScore >= 5)
             {
                 PlayerPrefs.SetInt("Score2", 0);
+                PlayerPrefs.SetInt("Score1", 0);
+                PlayerPrefs.SetString("Winner", "Player 2 ");
+                PlayerPrefs.SetString("Color", "blue");
+                SceneManager.LoadScene("Win");
             }
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
         if (collision.gameObject.name == "Player2")
         {
             GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore++;
             PlayerPrefs.SetInt("Score1", GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore);
+
             if (GameObject.Find("Player1").GetComponent<Player>().PlayerOneScore >= 5)
             {
                 PlayerPrefs.SetInt("Score1", 0);
+                PlayerPrefs.SetInt("Score2", 0);
+                PlayerPrefs.SetString("Winner", "Player 1 ");
+                PlayerPrefs.SetString("Color", "red");
+
+                SceneManager.LoadScene("Win");
             }
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
 
 

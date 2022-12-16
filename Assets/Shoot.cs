@@ -25,9 +25,6 @@ public class Shoot : MonoBehaviour
         
         if (gameObject.GetComponent<Player>().playerOne)
         {
-            Debug.Log(SpawnedObjects[0]);
-            Debug.Log(SpawnedObjects[1]);
-            Debug.Log(SpawnedObjects[2]);
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 Fire();
